@@ -5,29 +5,48 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-
-  return graphql(`
-    {
-      allMarkdownRemark(limit: 1000) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              tags
-              templateKey
+  const podcastTemplate = path.resolve('src/templates/podcast-page.js')
+  return graphql(
+      `{
+          allPodcastsJson(limit: 10) {
+              edges {
+                  node {
+                      name
+                      description
+                      fields {
+                        slug
+                      }
+                  }
+              }
+          },
+          allMarkdownRemark(limit: 1000) {
+            edges {
+              node {
+                id
+                fields {
+                  slug
+                }
+                frontmatter {
+                  tags
+                  templateKey
+                }
+              }
             }
           }
-        }
-      }
-    }
-  `).then(result => {
+      }`
+  ).then(result => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
+        throw result.errors
     }
+    result.data.allPodcastsJson.edges.forEach(edge => {
+        createPage({
+            path: edge.node.fields.slug,
+            component: podcastTemplate,
+            context: {
+                name: edge.node.name
+            }
+        })
+    })
 
     const posts = result.data.allMarkdownRemark.edges
 
@@ -75,8 +94,7 @@ exports.createPages = ({ actions, graphql }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
-
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `MarkdownRemark` || node.internal.type === 'PodcastsJson') {
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
