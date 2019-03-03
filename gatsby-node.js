@@ -94,12 +94,15 @@ exports.createPages = ({ actions, graphql }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
-  if (node.internal.type === `MarkdownRemark` || node.internal.type === 'PodcastsJson') {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+  let value = ""
+  if (node.internal.type === `MarkdownRemark`) {
+    value = createFilePath({ node, getNode })
+  } else if (node.internal.type === 'PodcastsJson') {
+    value = "/podcasts/episode-" + node.number 
   }
+  createNodeField({
+    name: `slug`,
+    node,
+    value,
+  })
 }
