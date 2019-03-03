@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
+import PageHeader from "../components/PageHeader";
 
 export default class PodcastPageTemplate extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ export default class PodcastPageTemplate extends React.Component {
   render() {
     return (
       <Layout>
+        <PageHeader title={this.state.podcast.name}></PageHeader>
         <Grid container>
           <Grid item xs={12}>
             <h1>{this.state.podcast.name}</h1>
