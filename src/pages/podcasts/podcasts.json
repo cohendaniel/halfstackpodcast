@@ -2,7 +2,8 @@
     {
         "number": 1,
         "name": "Hello (Dolly) World",
-        "description": "Join us for podcasting, singing and halfstackpoddery",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan magna. Morbi rutrum, velit et accumsan rhoncus, ante metus vulputate mauris, eget semper erat augue a ex. Morbi vel tellus ut enim lobortis sodales in id nulla. Ut non ex velit. Phasellus mollis libero felis, ut hendrerit mi tempor non. Maecenas faucibus eget dui et elementum. Aenean at ultricies mi. Donec sit amet commodo lorem, ac efficitur quam. Aenean in quam odio. Nunc aliquet mi lorem, sed lacinia nisi dapibus sit amet. Pellentesque est orci, dignissim in augue in, accumsan imperdiet felis. Maecenas rutrum leo eget nisl fermentum sodales hendrerit rutrum massa. Nulla ac ipsum metus. Praesent in urna eu lacus sollicitudin eleifend.",
+        "image": "https://images.pexels.com/photos/76172/pexels-photo-76172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "links": [
             "http://www.halfstackpod.com",
             "https://twitter.com/halfstackpod",
@@ -12,7 +13,8 @@
     {
         "number": 2,
         "name": "First REACTions",
-        "description": "Join us for podcasting, singing and halfstackpoddery",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan magna. Morbi rutrum, velit et accumsan rhoncus, ante metus vulputate mauris, eget semper erat augue a ex. Morbi vel tellus ut enim lobortis sodales in id nulla. Ut non ex velit. Phasellus mollis libero felis, ut hendrerit mi tempor non. Maecenas faucibus eget dui et elementum. Aenean at ultricies mi. Donec sit amet commodo lorem, ac efficitur quam. Aenean in quam odio. Nunc aliquet mi lorem, sed lacinia nisi dapibus sit amet. Pellentesque est orci, dignissim in augue in, accumsan imperdiet felis. Maecenas rutrum leo eget nisl fermentum sodales hendrerit rutrum massa. Nulla ac ipsum metus. Praesent in urna eu lacus sollicitudin eleifend.",
+        "image": "https://images.pexels.com/photos/76172/pexels-photo-76172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "links": [
             "http://www.halfstackpod.com",
             "https://twitter.com/halfstackpod",
@@ -22,7 +24,8 @@
     {
         "number": 3,
         "name": "Something Rabinnical",
-        "description": "Join us for podcasting, singing and halfstackpoddery",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan magna. Morbi rutrum, velit et accumsan rhoncus, ante metus vulputate mauris, eget semper erat augue a ex. Morbi vel tellus ut enim lobortis sodales in id nulla. Ut non ex velit. Phasellus mollis libero felis, ut hendrerit mi tempor non. Maecenas faucibus eget dui et elementum. Aenean at ultricies mi. Donec sit amet commodo lorem, ac efficitur quam. Aenean in quam odio. Nunc aliquet mi lorem, sed lacinia nisi dapibus sit amet. Pellentesque est orci, dignissim in augue in, accumsan imperdiet felis. Maecenas rutrum leo eget nisl fermentum sodales hendrerit rutrum massa. Nulla ac ipsum metus. Praesent in urna eu lacus sollicitudin eleifend.",
+        "image": "https://images.pexels.com/photos/76172/pexels-photo-76172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "links": [
             "http://www.halfstackpod.com",
             "https://twitter.com/halfstackpod",
@@ -33,6 +36,7 @@
         "number": 4,
         "name": "Hello (Dolly) World",
         "description": "Join us for podcasting, singing and halfstackpoddery",
+        "image": "https://images.pexels.com/photos/76172/pexels-photo-76172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "links": [
             "http://www.halfstackpod.com",
             "https://twitter.com/halfstackpod",
@@ -43,6 +47,7 @@
         "number": 5,
         "name": "Hello (Dolly) World",
         "description": "Join us for podcasting, singing and halfstackpoddery",
+        "image": "https://images.pexels.com/photos/76172/pexels-photo-76172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "links": [
             "http://www.halfstackpod.com",
             "https://twitter.com/halfstackpod",

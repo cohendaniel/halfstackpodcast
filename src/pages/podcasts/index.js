@@ -15,7 +15,7 @@ const listProducts = (data) => {
         <Paper>
           <Link style={{textAlign: 'center'}} to={urlPath} key={edge.node.name}>
             <div>
-              <img src="https://images.pexels.com/photos/76172/pexels-photo-76172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+              <img src={edge.node.image}/>
             </div>
             <Typography variant="subtitle1">{edge.node.name}</Typography>
             <Typography variant="caption">{('Episode ' + edge.node.number).toUpperCase()}</Typography>
@@ -50,6 +50,7 @@ export const query = graphql`
         node {
           name
           number
+          image
           fields {
             slug
           }

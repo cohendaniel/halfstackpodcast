@@ -8,7 +8,7 @@ const PageHeader = class extends React.Component {
             <Typography style={{
                 margin: '80px 0px', 
                 textAlign: 'center',
-                background: '#bb7a44',
+                background: this.props.theme.palette.secondary.main,
                 padding: '100px',
                 color: 'white'
               }} 
