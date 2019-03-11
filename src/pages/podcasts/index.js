@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 

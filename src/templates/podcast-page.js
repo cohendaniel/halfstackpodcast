@@ -1,7 +1,7 @@
 import React from "react"
 import Grid from '@material-ui/core/Grid';
-import { Link } from "gatsby"
 import { Typography } from "@material-ui/core";
+import { graphql } from 'gatsby'
 
 import Layout from "../components/Layout"
 import PageHeader from "../components/PageHeader";

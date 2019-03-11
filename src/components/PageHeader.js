@@ -6,10 +6,10 @@ const PageHeader = class extends React.Component {
     render() {
         return (
             <Typography style={{
-                margin: '80px 0px', 
+                marginBottom: '80px', 
                 textAlign: 'center',
                 background: this.props.theme.palette.secondary.main,
-                padding: '100px',
+                padding: '80px',
                 color: 'white'
               }} 
               variant="h2"
